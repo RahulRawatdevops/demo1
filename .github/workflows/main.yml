@@ -24,7 +24,7 @@ jobs:
         with:
           path: |
             ~/.npm
-            ~/.cache
+            node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/*.lock') }}
 
       - name: Install Dependencies
@@ -39,5 +39,5 @@ jobs:
         with:
           path: |
             ~/.npm
-            ~/.cache
+            node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/*.lock') }}
